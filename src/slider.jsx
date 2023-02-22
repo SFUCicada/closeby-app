@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-
+import { createTheme } from '@mui/material/styles';
 function valuetext(value) {
   return `${value}°C`;
 }
@@ -9,6 +9,24 @@ function valuetext(value) {
 const minDistance = 10;
 
 export default function Slider2() {
+  
+  const theme = createTheme({
+    palette: {
+      primary: {
+        light: '#7704ba',
+        main: '#7704ba',
+        dark: '#7704ba',
+        contrastText: '#fff',
+      },
+      secondary: {
+        light: '#7704ba',
+        main: '#7704ba',
+        dark: '#7704ba',
+        contrastText: '#000',
+      },
+    },
+  });
+
   const [value1, setValue1] = React.useState([5, 15]);
 
   const handleChange1 = (event, newValue, activeThumb) => {
@@ -52,7 +70,7 @@ export default function Slider2() {
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         disableSwap
-        color="secondary"
+        color='secondary'
       />
       <Slider className='time-slider'
         getAriaLabel={() => 'Minimum distance shift'}
