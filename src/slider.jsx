@@ -45,15 +45,16 @@ export default function Slider2() {
 
   return (
     <Box sx={{ width: 300 }}>
-      <Slider
+      <Slider className='distance-slider'
         getAriaLabel={() => 'Minimum distance'}
         value={value1}
         onChange={handleChange1}
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         disableSwap
+        color="secondary"
       />
-      <Slider
+      <Slider className='time-slider'
         getAriaLabel={() => 'Minimum distance shift'}
         value={value2}
         onChange={handleChange2}
