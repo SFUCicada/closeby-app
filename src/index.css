@@ -60,40 +60,4 @@ body{
  }
 
 /*Slider*/
-.horizontal-slider {
-  width: 100%;
-  max-width: 500px;
-  height: 100vh;
-  margin: auto;
-  margin-top: 200px;
-}
-.example-thumb {
-  cursor: pointer;
-  position: absolute;
-  z-index: 100;
-  background: #ffffff;
-  border: 5px solid #7704ba;
-  border-radius: 100%;
-  display: block;
-}
-.example-thumb.active {
-  background-color: white;
-}
-.example-track {
-  position: relative;
-  background: grey;
-}
-.example-track.example-track-0 {
-  background: #7704ba;
-}
-.horizontal-slider .example-track {
-  top: 20px;
-  height: 4px;
-}
-.horizontal-slider .example-thumb {
-  top: 12px;
-  width: 10px;
-  outline: none;
-  height: 10px;
-  line-height: 38px;
-}
+
