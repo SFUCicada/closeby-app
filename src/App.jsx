@@ -13,9 +13,6 @@ function App() {
               </ul>
           </nav>
         </header>
-          <p>
-            closeby
-          </p>
       </body>
     </div>
   );
