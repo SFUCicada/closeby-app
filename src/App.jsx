@@ -1,20 +1,22 @@
-import logo from './assets/images/logo.svg';
+import logo from './assets/images/white-logo.png';
 
 function App() {
   return (
     <div className="app">
-      <header className="app-header">
-        <img src={logo} className="app-logo" alt="logo" />
-        <p className="header">Vite React Starter 💯</p>
-        <p>
-          Vite + React <br />
-          ESLint + Prettier + Stylelint
-          <br />
-          Sass + Emotion + Tailwind
-          <br />
-          Jest + Testing Library
-        </p>
-      </header>
+      <body className='app-body'>
+        <header className="app-header">
+          <nav className='navbar'>
+            <a href="index.html"><img src={logo} className="app-logo" alt="logo" /></a>
+              <ul>
+                <li><a className='nav-button' href="aboutus.html">support</a></li>
+                <li><a className='nav-button' href="aboutus.html">about us</a></li>
+              </ul>
+          </nav>
+        </header>
+          <p>
+            closeby
+          </p>
+      </body>
     </div>
   );
 }

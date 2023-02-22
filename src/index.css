@@ -3,42 +3,65 @@
 @tailwind components;
 @tailwind utilities;
 
-.app {
-  text-align: center;
+@font-face {
+  font-family: ZonaBlack;
+  src: url(./font/Zona-Pro/ZonaPro-Black.otf);
+}
+
+@font-face {
+  font-family: Zona;
+  src: url(./font/Zona-Pro/ZonaPro-Bold.otf);
 }
 
 .app-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 140px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .app-logo {
-    animation: app-logo-spin infinite 20s linear;
-  }
+/*Header*/
+
+.navbar {
+  display: inline-block;
+  width: 100%;
+  background-color: #7704ba;
+  height: 140px;
+  position: relative;
 }
 
-.app-header {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #282c34;
+.navbar ul{
+  list-style: none;
+  float: right;
+  padding-right: 20px;
+  margin: 0;
+  margin-right: 5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 1em;
+}
+
+.nav-button{
+  font-family: ZonaBlack;
   color: white;
-  font-size: calc(10px + 2vmin);
+  font-size: 30px;
+  text-decoration: none;
+  position: relative;
+  margin: 15px;
+
 }
 
-.app-link {
-  color: #61dafb;
-}
+/*Body*/
 
-@keyframes app-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+body{
+  background-image: url(./assets/images/home-page-bg.jpg);
+  height: 100px;
+  padding: 0;
+  margin: 0;
+ }
 
-  to {
-    transform: rotate(360deg);
-  }
-}
+
