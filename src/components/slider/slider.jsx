@@ -13,7 +13,7 @@ function valuetext(value) {
   return `${value}°C`;
 }
 
-const minDistance = 5;
+const minDistance = 1;
 
 export default function Slider2() {
   
