@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import Checkbox from '@mui/material/Checkbox';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
@@ -40,16 +41,17 @@ export default function Tags() {
   };
 
   return (
+  <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: 20}}>
     <div>
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel id="demo-multiple-checkbox-label">Tag</InputLabel>
+      <FormControl sx={{ m: 1, width: 300}}>
+        <InputLabel id="demo-multiple-checkbox-label">Event Types</InputLabel>
         <Select
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
           value={personName}
           onChange={handleChange}
-          input={<OutlinedInput label="Tag" />}
+          input={<OutlinedInput label="Event Types" />}
           renderValue={(selected) => selected.join(', ')}
           MenuProps={MenuProps}
         >
@@ -62,5 +64,6 @@ export default function Tags() {
         </Select>
       </FormControl>
     </div>
+    </Box>
   );
 }

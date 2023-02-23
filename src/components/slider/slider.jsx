@@ -1,3 +1,4 @@
+import { CenterFocusStrong, CenterFocusWeakTwoTone } from '@mui/icons-material';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import { createTheme } from '@mui/material/styles';
@@ -63,8 +64,10 @@ export default function Slider2() {
   };
 
   return (
-    <Box sx={{ width: 300 }}>
-      <Slider className="distance-slider"
+    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div>
+    <Box sx={{ width: 300}}>
+      <Slider className="distance-slider" 
         getAriaLabel={() => 'Minimum distance'}
         value={value1}
         onChange={handleChange1}
@@ -80,7 +83,10 @@ export default function Slider2() {
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         disableSwap
+        color='secondary'
       />
+    </Box>
+    </div>
     </Box>
   );
 }
