@@ -26,9 +26,9 @@ const homepage = () => {
         <div className="app">
         <body className="app-body">
           <header className="app-header" />
+          <h1>find an event</h1>
             <Slider />
             <Tags />
-
             <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: 3}}>
                 <ColorButton variant="Contained" sx={{
                     width: 110,

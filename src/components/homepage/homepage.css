@@ -1,0 +1,9 @@
+h1{
+    font-family: ZonaBlack;
+    font-size: 80px;
+    color: #7704ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+}
