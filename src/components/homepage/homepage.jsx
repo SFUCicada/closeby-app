@@ -29,9 +29,9 @@ const homepage = () => {
             <Slider />
             <Tags />
 
-            <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
+            <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: 3}}>
                 <ColorButton variant="Contained" sx={{
-                    width: 100,
+                    width: 110,
                     }}>go!</ColorButton>
             </Box>
             
