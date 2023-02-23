@@ -43,7 +43,7 @@ export default function Tags() {
   return (
   <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
     <div>
-      <FormControl sx={{ m: 1, width: 300}}>
+      <FormControl sx={{ m: 1, width: 400}}>
         <InputLabel id="demo-multiple-checkbox-label">Event Types</InputLabel>
         <Select
           labelId="demo-multiple-checkbox-label"

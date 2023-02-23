@@ -66,8 +66,8 @@ export default function Slider2() {
   return (
     <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop:20, paddingBottom:0}}>
     <div>
-    <Box sx={{ width: 300}}>
-      <Slider className="distance-slider" 
+    <Box sx={{ width: 400}}>
+      <Slider sx={{paddingBottom: 5}}className="distance-slider" 
         getAriaLabel={() => 'Minimum distance'}
         value={value1}
         onChange={handleChange1}
@@ -76,7 +76,7 @@ export default function Slider2() {
         disableSwap
         color="secondary"
       />
-      <Slider className="time-slider"
+      <Slider sx={{paddingBottom: 5}}className="time-slider"
         getAriaLabel={() => 'Minimum distance shift'}
         value={value2}
         onChange={handleChange2}
