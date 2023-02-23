@@ -1,7 +1,8 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import { createTheme } from '@mui/material/styles';
+import * as React from 'react';
+
 function valuetext(value) {
   return `${value}°C`;
 }
@@ -63,16 +64,16 @@ export default function Slider2() {
 
   return (
     <Box sx={{ width: 300 }}>
-      <Slider className='distance-slider'
+      <Slider className="distance-slider"
         getAriaLabel={() => 'Minimum distance'}
         value={value1}
         onChange={handleChange1}
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         disableSwap
-        color='secondary'
+        color="secondary"
       />
-      <Slider className='time-slider'
+      <Slider className="time-slider"
         getAriaLabel={() => 'Minimum distance shift'}
         value={value2}
         onChange={handleChange2}
