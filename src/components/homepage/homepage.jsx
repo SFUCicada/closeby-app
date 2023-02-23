@@ -2,6 +2,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 import { purple } from '@mui/material/colors';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +28,13 @@ const homepage = () => {
           <header className="app-header" />
             <Slider />
             <Tags />
-            <ColorButton variant="Contained">go!</ColorButton>
+
+            <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
+                <ColorButton variant="Contained" sx={{
+                    width: 100,
+                    }}>go!</ColorButton>
+            </Box>
+            
         </body>
       </div>
     );
