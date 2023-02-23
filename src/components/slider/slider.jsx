@@ -2,6 +2,11 @@ import { CenterFocusStrong, CenterFocusWeakTwoTone } from '@mui/icons-material';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
 import { createTheme } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 import * as React from 'react';
 
 function valuetext(value) {
