@@ -64,7 +64,7 @@ export default function Slider2() {
   };
 
   return (
-    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop:20, paddingBottom:0}}>
     <div>
     <Box sx={{ width: 300}}>
       <Slider className="distance-slider" 
