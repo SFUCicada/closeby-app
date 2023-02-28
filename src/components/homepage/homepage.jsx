@@ -6,6 +6,7 @@ import { purple } from '@mui/material/colors';
 import { styled } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 
+
 import { Slider, Tags } from '..';
 import logo from "../../images/white-logo.png";
 
@@ -26,13 +27,18 @@ const homepage = () => {
         <div className="app">
         <body className="app-body">
           <header className="app-header" />
-          <h1>find an event</h1>
+          <h1><strong>find an event</strong></h1>
             <Slider />
             <Tags />
             <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: 3}}>
-                <ColorButton variant="Contained" sx={{
+                <ColorButton variant="Contained" size="large" sx={{
                     width: 110,
-                    }}>go!</ColorButton>
+                    }}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      window.location.href='http://google.com';
+                      }}
+                    >go!</ColorButton>
             </Box>
             
         </body>

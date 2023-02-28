@@ -69,7 +69,7 @@ export default function Slider2() {
   };
 
   return (
-    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop:0, paddingBottom:0}}>
+    <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: 0, paddingBottom:0, marginTop: -5}}>
     <div>
     <Typography id="Slider2" gutterBottom>
         Distance (in miles)

@@ -8,6 +8,12 @@
   src: url(./font/Zona-Pro/ZonaPro-Bold.otf);
 }
 
+@font-face {
+  font-family: Rotunda;
+  src: url(./font/Rotunda/Rotunda-Bold.ttf);
+}
+
+
 .app-logo {
   height: 140px;
 }
