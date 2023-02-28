@@ -1,11 +1,11 @@
-import firebase from "../../firebase";
+import firebaseConfig from "../../firebase";
 import React, {useState, useEffect} from "react";
 
 function events(){
 const [events, setEvents] = useState([]);
 const [loading, setLoading] = useState(false);
 
-const ref = firebase.firestore().collection("events");
+const ref = firebaseConfig.firestore().collection("events");
 
 function getEvents() {
     setLoading(true);
