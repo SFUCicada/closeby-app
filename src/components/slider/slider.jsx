@@ -94,7 +94,7 @@ export default function Slider2() {
         valueLabelDisplay="auto"
         getAriaValueText={valuetext}
         disableSwap
-        color='secondary'
+        color="secondary"
       />
     </Box>
     </div>

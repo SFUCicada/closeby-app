@@ -1,5 +1,6 @@
-import firebaseConfig from "../../firebase";
 import React, {useState, useEffect} from "react";
+
+import firebaseConfig from "../../firebase";
 
 function events(){
 const [events, setEvents] = useState([]);
@@ -14,7 +15,7 @@ function getEvents() {
         querySnapshot.forEach((doc) => {
             items.push(doc.data());
         });
-        setEvents(items)
+        setEvents(items);
         setLoading(false);
     });
 }

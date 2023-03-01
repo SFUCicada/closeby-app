@@ -1,17 +1,18 @@
 import { addDoc, collection } from "@firebase/firestore";
+
 import { firestore } from "../@firebase_setup/firebase";
 
 const handleSubmit = (testdata) => {
   const ref = collection(firestore, "test_data"); // Firebase creates this automatically
 
-  let data = {
+  const data = {
     testData: testdata
   };
 
   try {
-    addDoc(ref, data)
+    addDoc(ref, data);
   } catch (err) {
-    console.log(err)
+    console.log(err);
   };
 };
 
