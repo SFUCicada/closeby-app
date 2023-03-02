@@ -8,4 +8,4 @@ describe("About", () => {
         render(<about />);
         expect(element("div")).not.toBeNull();
     });
-})
+});

@@ -17,4 +17,4 @@ describe("NavBar", () => {
         expect(listChildren[0].textContent).toEqual("support")
         expect(listChildren[1].textContent).toEqual("about us")
     });
-})
+});

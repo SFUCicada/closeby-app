@@ -14,4 +14,4 @@ describe("Homepage", () => {
         const button = element("ColorButton");
         expect(button).not.toBeNull();
     });
-})
+});
